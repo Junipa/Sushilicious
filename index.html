@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="sushi.ico" />
+    <title>Sushigame</title>
+    <link rel="stylesheet" href="sushigame.css">
+    <script src="sushigameRandomRange.js"></script>
+    <script src="sushigameCanvasManager.js"></script>
+    <script src="sushigameKeyManager.js"></script>
+    <script src="sushigameClock.js"></script>
+    <script src="sushigameIngredients.js"></script>
+    <script src="sushigameRecipes.js"></script>
+    <script src="sushigameWallet.js"></script>
+    <script src="sushigameCustomer.js"></script>
+    <script src="sushigameConveyorBelt.js"></script>
+    <script src="sushigamePreparation.js"></script>
+    <script src="sushigameStock.js"></script>
+    <script src="sushigameRestockOrder.js"></script>
+    <script src="sushigameGame.js"></script> 
+    <script src="sushigame.js"></script>
+</head>
+
+<body id="body">
+    <div id="titleContainer">
+        <div id="title">SUSHIGAME</div>
+    </div>
+    <br>
+    <br>
+    <div id="mainArea">
+        <div class="container">
+            <div id="cookBook">
+                <div class="recipeTitle">Onigiri</div>
+                <div class="recipe">
+                    2 Rice
+                    1 Nori
+                </div>
+                <div class="recipeTitle">Roe California</div>
+                <div class="recipe">
+                    1 Rice
+                    1 Roe
+                    1 Nori
+                </div>
+                <div class="recipeTitle">Roe Maki</div>
+                <div class="recipe">
+                    1 Rice
+                    2 Roe
+                    1 Nori
+                </div>
+            </div>
+        </div>
+        <div class="screen">
+            <button id="cookBookButton">Display Cookbook</button>
+            <div id="canvasDisplay">
+                <canvas id="canvas" width="800" height="600">Affichage de la simulation non géré par le navigateur.</canvas>
+                <div id="startMessage">
+                    <div id="flexbox">Press Space to start</div>
+                </div>
+            </div>
+            <button id="guideButton">Display Guide</button>
+        </div>
+        <div class="container">
+            <div id="guide">
+                <p>
+                    Prepare sushis to make your customers happy and earn money.
+                    <br>
+                    Become the best bloody sushi chef you can !
+                    <br>
+                </p>
+                <p>
+                    <b>Controls :</b>
+                    <br>
+                    Use ingredients with the key indicated in the stock.
+                    <br>
+                    Shift + key to restock an ingredient.
+                    <br>
+                    Press Enter to prepare the ingredients placed on the mat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="credits">TRex Gaming 2020</div>
+</body>
+</html>
